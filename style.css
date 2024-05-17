@@ -11,7 +11,7 @@
 }
 
 #calci-screen {
-  width: 100%;
+  width: 98%;
   height: 25px;
   border: 2px solid black;
   border-radius: 4px;
@@ -50,4 +50,15 @@
 button {
   border-radius: 4px;
   border: 2px solid black;
+}
+
+#calci-equal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#calci-equal > button {
+  box-sizing: border-box;
+  padding-bottom: 7px;
 }
