@@ -26,30 +26,30 @@
         <div id="calci-number">
           <!--number keys-->
           <div class="calci-number-row">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
+            <button onclick="myFunction(1)">1</button>
+            <button onclick="myFunction(2)">2</button>
+            <button onclick="myFunction(3)">3</button>
             <!-- <button>+</button> -->
           </div>
 
           <div class="calci-number-row">
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
+            <button onclick="myFunction(4)">4</button>
+            <button onclick="myFunction(5)">5</button>
+            <button onclick="myFunction(6)">6</button>
             <!-- <button>-</button> -->
           </div>
 
           <div class="calci-number-row">
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
+            <button onclick="myFunction(7)">7</button>
+            <button onclick="myFunction(8)">8</button>
+            <button onclick="myFunction(9)">9</button>
             <!-- <button>/</button> -->
           </div>
 
           <div class="calci-number-row">
-            <button>00</button>
-            <button>0</button>
-            <button>.</button>
+            <button onclick="myFunction('00')">00</button>
+            <button onclick="myFunction(0)">0</button>
+            <button onclick="myFunction('.')">.</button>
             <!-- <button>X</button> -->
           </div>
 
@@ -63,18 +63,20 @@
 
         <!--operations keys block-->
         <div id="calci-operation">
-          <button>+</button>
-          <button>-</button>
-          <button>/</button>
-          <button>x</button>
+          <button onclick="myFunction('+')">+</button>
+          <button onclick="myFunction('-')">-</button>
+          <button onclick="myFunction('/')">/</button>
+          <button onclick="myFunction('x')">x</button>
         </div>
       </div>
 
       <div id="calci-equal">
-        <button>AC</button>
-        <button><img src="./backspace.svg" /></button>
-        <button>%</button>
-        <button>=</button>
+        <button onclick="myFunction('AC')">AC</button>
+        <button onclick="myFunction('back')">
+          <img src="./backspace.svg" />
+        </button>
+        <button onclick="myFunction('%')">%</button>
+        <button onclick="myFunction('=')">=</button>
       </div>
     </div>
   </body>
@@ -84,4 +86,5 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"
   ></script>
+  <script src="./calc.js"></script>
 </html>
